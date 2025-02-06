@@ -1,0 +1,117 @@
+main {
+  max-width: 627px;
+  width: 100%;
+  padding-top: 62px;
+}
+
+@media (width<=400px) {
+  main {
+    padding: 62px 32px;
+    #btn-add {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (400px<width<=635px) {
+  main {
+    padding: 62px 32px;
+    #add-item {
+      max-width: none;
+    }
+
+    #btn-add {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 44px;
+}
+
+#add-item {
+  all: unset;
+  max-width: 451px;
+  width: 100%;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 18px;
+  background-color: var(--bg-secondary);
+  box-sizing: border-box;
+}
+
+#add-item:hover {
+  border: 2px solid var(--border-hover);
+}
+
+#add-item:focus {
+  border: 2px solid var(--pink);
+}
+
+#add-item::placeholder {
+  color: var(--content-tertiary);
+}
+
+#btn-add {
+  all: unset;
+  background-color: var(--pink);
+  color: var(--white);
+  border-radius: 12px;
+  font: var(--label);
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+#btn-add:hover {
+  background-color: var(--purple);
+}
+
+.delete-message {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  display: flex;
+  width: 627px;
+  background-color: var(--red);
+  border-radius: 12px;
+  gap: 8px;
+  padding: 12px;
+  transform: translateX(-50%);
+  color: var(--white);
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeInOut 3s ease-in-out;
+
+  p {
+    width: 100%;
+  }
+}
+
+@media (width<=400px) {
+  .delete-message {
+    width: 327px;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

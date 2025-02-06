@@ -1,0 +1,52 @@
+.items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 40px;
+
+  div {
+    display: flex;
+    width: 100%;
+    padding: 8.5px 0.75rem;
+    background-color: var(--bg-secondary);
+    border-radius: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+
+    input:checked {
+      background-image: url("../assets/check.svg");
+      background-color: var(--pink);
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+    }
+
+    input {
+      appearance: none;
+      cursor: pointer;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background-color: var(--bg-secondary);
+    }
+
+    p {
+      width: 100%;
+      color: var(--content-secondary);
+    }
+
+    button {
+      all: unset;
+      cursor: pointer;
+      margin: 8px;
+      background-image: url("../assets/lixeira.svg");
+      width: 1rem;
+      height: 1rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
