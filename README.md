@@ -46,7 +46,3 @@ Este site é responsivo e funciona em diversos dispositivos (desktop, tablets e 
 - Adicionar armazenamento local para salvar a lista.
 - Criar categorias para os itens.
 - Implementar um botão de "Limpar Lista".
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Sinta-se livre para usá-lo e melhorá-lo! 🎉
