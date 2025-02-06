@@ -1,3 +1,23 @@
+:root {
+    --ff : font-family: "Inter", serif;
+    --title : 800 24px/32px var(--ff);
+    --label: 600 16px/20px var(--ff);
+    --paragraph: 500 16px/20px var(--ff);
+    --link: 500 14px/16px var(--ff);
+
+    --bg-primary: #F4F5FB;
+    --bg-secondary: #FFFFFF;
+    --pink: #CA3884;
+    --purple: #A52C6B;
+    --red:#C93847;
+    --content-primary:#080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --white: #FFFFFF;
+    --border: #D1D5DB;
+    --border-hover: #B9C2D0;
+}
+
 body {
   background-color: black;
   color: white;
